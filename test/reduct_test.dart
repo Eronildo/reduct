@@ -20,6 +20,7 @@ void main() {
     counterState.setValue(0);
     counterReducer = CounterReducer();
   });
+
   tearDown(() => counterReducer.dispose());
 
   test('increment counter', () {
