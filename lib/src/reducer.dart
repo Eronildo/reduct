@@ -10,7 +10,7 @@ import 'atom.dart';
 /// final incrementAction = Atom.action();
 ///
 /// class CounterReducer extends Reducer {
-/// 
+///
 ///   CounterReducer() {
 ///     on(incrementAction, _increment);
 ///   }
