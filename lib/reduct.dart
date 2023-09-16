@@ -1,5 +1,5 @@
 /// Reduct Library.
-library;
+library reduct;
 
 export 'src/atom.dart';
 export 'src/reducer.dart';
