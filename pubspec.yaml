@@ -1,11 +1,11 @@
 name: reduct
 description: An elementary yet adaptable state management solution for Dart.
-version: 1.0.0+1
+version: 1.0.1
 repository: https://github.com/Eronildo/reduct
 
 environment:
-  sdk: ^3.0.5
+  sdk: '>=2.12.0 <4.0.0'
 
 dev_dependencies:
-  lints: ^2.0.0
-  test: ^1.21.0
+  lints: ^4.0.0
+  test: ^1.25.5

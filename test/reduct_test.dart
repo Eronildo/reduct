@@ -4,12 +4,12 @@ import 'package:test/test.dart';
 final counterState = Atom(0);
 
 final incrementAction = Atom.action();
-final setNewCounterAction = Atom((count: 0));
+final setNewCounterAction = Atom(0);
 
 class CounterReducer extends Reducer {
   CounterReducer() {
     on(incrementAction, (_) => counterState.value++);
-    on(setNewCounterAction, (value) => counterState.setValue(value.count));
+    on<int>(setNewCounterAction, (value) => counterState.setValue(value));
   }
 }
 
@@ -31,7 +31,7 @@ void main() {
 
   test('set new counter', () {
     expect(counterState.value, 0);
-    setNewCounterAction((count: 10));
+    setNewCounterAction(10);
     expect(counterState.value, 10);
   });
 }

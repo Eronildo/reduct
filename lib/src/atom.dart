@@ -212,7 +212,7 @@ const noValue = NoValue();
 
 /// An error thrown when trying to update the value of a [Atom],
 /// but at least one of the listeners threw.
-final class AtomListenerError extends Error {
+class AtomListenerError extends Error {
   AtomListenerError._(
     this.errors,
     this.stackTraces,
@@ -252,7 +252,7 @@ $buffer
   }
 }
 
-final class _ListenerEntry<T> extends LinkedListEntry<_ListenerEntry<T>> {
+class _ListenerEntry<T> extends LinkedListEntry<_ListenerEntry<T>> {
   _ListenerEntry(this.listener);
 
   final Listener<T> listener;
